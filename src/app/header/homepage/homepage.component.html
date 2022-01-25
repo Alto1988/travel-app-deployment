@@ -1,0 +1,53 @@
+<div class="navbar-container">
+  <nav class="nav-container">
+    <img src="../assets/images/logo.png" />
+    <a href="http://localhost:4200/"> WayFarer </a>
+    <button class="Search-posts" (click)="displaySearch()">Search Posts</button>
+    <div [hidden]="toggleSearchField">
+      <input
+        type="text"
+        placeholder="Enter a post title"
+        class="search-cities"
+        [(ngModel)]="postTitle"
+        (keyup)="findPostsByTitle(postTitle)"
+        required
+        maxlength="200"
+      />
+      <input
+        type="submit"
+        value="Search"
+        class="search-cities-button"
+        (click)="findPostsByTitle(postTitle)"
+      />
+    </div>
+  </nav>
+  <button
+    class="routerlink-button"
+    routerLink="/cities"
+    (click)="displayImage()"
+    [hidden]="toggleImageField"
+  >
+    Show City List
+  </button>
+</div>
+<div [hidden]="toggleImageField">
+  <img
+    class="home-background-img"
+    src="https://cdn.stocksnap.io/img-thumbs/960w/ocean-water_DLHXWO09HY.jpg"
+  />
+</div>
+
+<!-- <h3>Something before {{ titlePost }}something After {{ postContent }}</h3> -->
+<div [hidden]="toggleSearchField" class="search-post-container" [hidden]="toggleImageField">
+  <ul>
+    <li *ngFor="let post of postList">
+      <p class="title-p">
+        <strong>{{ post.title }}</strong>
+      </p>
+      <p>{{ post.content }}</p>
+    </li>
+  </ul>
+  <!-- <div>
+    <button (click)="findWeather()">Click For Weather Info</button>
+  </div> -->
+</div>

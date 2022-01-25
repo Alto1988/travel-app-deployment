@@ -1,0 +1,118 @@
+.navbar-container {
+  background-color: rgb(230, 235, 255);
+  border-bottom: 1px solid #0a8830e3;
+  box-shadow: 0 1px 4px #e7e7e7(134, 31, 31, 0.05);
+  height: 150px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-container a {
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+  color: rgb(2, 4, 117);
+}
+
+.navbar-container a:active,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-container img {
+  height: 150px;
+  width: 150px;
+  align-items: baseline;
+  margin-left: 10px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.search-cities {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  width: 375px;
+  height: 10px;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.Search-posts{
+  background-color: rgb(2, 4, 117);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #e7e7e7(0, 0, 0, 0.05);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  height: 25px;
+  margin: 10px;
+  padding: 0 10px;
+  width: 120px;
+}
+
+.search-cities-button {
+  background-color: #02a132e3;
+  border: 1px solid #02af36e3;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #e7e7e7(0, 0, 0, 0.05);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 35px;
+  padding: 0 20px;
+  width: 105px;
+  justify-content: center;
+  align-items: center;
+}
+
+.routerlink-button{
+  background-color: #02a132e3;
+  border: 1px solid #02af36e3;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #e7e7e7(0, 0, 0, 0.05);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 20px;
+  padding: 0 20px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.home-background-img{
+margin-top: 40px;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 500px;
+border-radius: 3px;
+
+}
+
+.search-post-container{
+  color:#4d4d4e;
+  font-size: 20px;
+  width: 75%;
+}
+
+.title-p{
+  color:rgb(2, 4, 117);
+  font-weight: bold;
+}

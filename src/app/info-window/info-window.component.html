@@ -1,0 +1,35 @@
+<div class="container">
+  <app-cities class="cities-container"></app-cities>
+
+  <div class="info-container">
+    <div class="name-country-div">
+      {{ cityObject.name }},
+      {{ cityObject.country }}
+    </div>
+
+    <ul *ngFor="let posts of cityObject.posts; let i = index">
+      <li>
+        <a
+          routerLink="/post"
+          [state]="{
+            title: posts.title,
+            content: posts.content,
+            author: posts.author
+          }"
+        >
+          {{ posts.title }}
+        </a>
+      </li>
+      <br />
+      <div>
+        {{ posts.author }}
+      </div>
+      <br />
+      <!-- <li>
+        Description:
+        {{ posts.content }}
+      </li> -->
+    </ul>
+    <img src="{{ cityObject.image }}" maxWidth="351px" />
+  </div>
+</div>
